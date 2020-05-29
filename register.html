@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+<style>
+body {
+	/*background: rgb(2,0,36);
+	background: #000*/
+	background-image: url("bg3.jpg");
+	background-size: cover;
+  	text-align: center;
+  	color: black;
+  	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+width:500px;
+clear:both;
+}
+
+.container input{
+clear:both;
+text-align: center;
+line-height: 8px;
+border-radius: 25px;
+border: 2px solid #fc466b;
+padding: 20px; 
+width: 150px;
+height: 0.5px;
+}
+
+.container label{
+width:150px;
+display:inline-block;
+font-weight: bold;
+}
+
+.container input[type='submit']{
+width:20%;
+height: 50px;
+margin-left:100px;
+
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ed3330;
+padding: 20px;
+border-radius: 25px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+
+.container input[type='submit']:hover{
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+cursor: pointer;
+/*background-image: linear-gradient(#f05a28, #ec008c, #f05a28);*/
+}
+
+</style>
+</head>
+<body>
+<center><h1>Registration</h1>
+<img src="avatar2.png" alt="Avatar" style="width:200px"><br><br>
+<div class='container'>
+<form onsubmit="return validate();">
+	<label for="pooltype">Choose pool type:</label>
+  <select name="pooltype" id="pooltype">
+    <option value="Select">Select</option>
+    <option value="Rider">Rider</option>
+    <option value="Provider">Provider</option>
+  </select>
+<br><br><label for='inp1'>Username</label>
+<input type='text' id='inp1' placeholder='Virtusa ID'><br><br>
+<label for='email'>Email address</label>
+<input type='text' id='email'><br><br>
+<label for='pass'>Password</label>
+<input type='password' id='pass'><br><br>
+<label for='contact'>Contact</label>
+<input type='text' id='contact'><br><br>
+<label for='dl'>Driving license</label>
+<input type='text' id='dl'><br><br>
+<label for='vRC'>Vehicle  number</label>
+<input type='text' id='vRC'> <br><br>
+<input type='submit' id='submitBtn' name='submit'>
+</form></div></center>
+<script src="register.js"></script>
+</body>
+</html>
